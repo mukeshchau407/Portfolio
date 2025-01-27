@@ -13,24 +13,24 @@
   </head>
 
   <body>
-    <header class="header active" data-header>
-      <a href="#" class="logo">Portfoilo</a>
+    <header class="header" data-header>
+      <a href="#" class="logo">Portfoilo. </a>
 
       <nav class="navbar">
-        <a href="#" style="--i: 1" class="active">Home</a>
+        <a href="#home" style="--i: 1" class="active">Home</a>
         <a href="#about" style="--i: 2">About</a>
-        <a href="#" style="--i: 3">Contact</a>
-        <a href="#" style="--i: 4">Portfoilo</a>
-        <a href="#" style="--i: 5">Skills</a>
+        <a href="#contact" style="--i: 3">Contact</a>
+        <a href="#portfolio" style="--i: 4">Portfoilo</a>
+        <a href="#skills" style="--i: 5">Skills</a>
       </nav>
 
-      <a href="#" class="btn-login">Login</a>
+      <!-- <a href="#" class="btn-login">Login</a> -->
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
       <div class="home-container">
         <h3>Hello! It's Me</h3>
-        <h1>Paxton Boom</h1>
+        <h1>Mukesh ChaudhaRy</h1>
         <h3>And I'm A <span class="text"></span></h3>
         <p>
           I'm expertise includes designing and implementing APIs, optimizing database performance, and ensuring system security, integrity and many more...
@@ -38,14 +38,13 @@
 
         <div class="home-social">
           <a href="#" style="--i: 7"><i class="bx bxl-facebook"></i></a>
-          <a href="#" style="--i: 8"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.instagram.com/paxton_boom/" style="--i: 8"><i class="bx bxl-instagram"></i></a>
           <a href="#" style="--i: 9"><i class="bx bxl-whatsapp"></i></a>
           <a href="#" style="--i: 10"><i class='bx bxl-linkedin-square'></i></a>
-          <a href="#" style="--i: 11"><i class="bx bxl-github"></i></a>
+          <a href="https://github.com/mukeshchau407/" style="--i: 11"><i class="bx bxl-github"></i></a>
         </div>
-        <a href="#about" class="about-btn"
-          >More About Me <i class="bx bx-arrow-back"></i
-        ></a>
+          <a href="#about" class="about-btn">More About Me <i class="bx bx-arrow-back"></i></a>
+          <a href="#about" class="about-btn">Hire Me<i class="bx bx-arrow-back"></i></a>
       </div>
 
       <div class="img-logo">
@@ -53,24 +52,59 @@
       </div>
     </section>
 
-    <section id="about">
+    <section class="about" id="about">
       <div class="about-container">
-        <h2>About Me</h2>
+
+        <img class="about-img" src="/assets/images/logo.png" alt="logo">
       
+      </div>
+
         <div class="about-content">
 
-          <img class="about-img" src="/assets/images/logo.png" alt="logo">
+          <h2>About-<span>Me</span></h2>
+          <h4>Full Stack Developer</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempore cupiditate expedita repellendus vitae hic dolore atque eius recusandae similique, commodi aliquid rerum, officia illum voluptate, esse quia quaerat. Cumque.
+          </p>
 
-          <div class="content">
-            <h2>UI/UX Design</h2>
+          <a href="#about" class="about-btn">More About Me <i class="bx bx-arrow-back"></i></a>
+        
+      </div>
+    </section>
+
+    <section class="service">
+
+      <div id="service">
+        
+        <div class="service-container">
+          <h1 class="subtitle">My Service</h1>
+          
+          <div class="service-list">
+            <div class="service-card">
+              <i class='bx bx-expand-horizontal' style="color:#0ef"></i>
+              <h2>UI/UX Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel nesciunt fugit at sit nisi sequi nobis? Quasi labore itaque quos quod, reprehenderit non ipsum ab eum ratione cumque quae?</p>
+              <a href="" class="read">Learn More</a>
+            </div>
+            <div class="service-card">
+              <i class='bx bxl-apple' style="color:#0ef"></i>
+              <h2>UI/UX Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel nesciunt fugit at sit nisi sequi nobis? Quasi labore itaque quos quod, reprehenderit non ipsum ab eum ratione cumque quae?</p>
+              <a href="" class="read">Learn More</a>
+            </div>
+            <div class="service-card">
+              <i class='bx bx-terminal' style="color: #0ef;"></i>
+              <h2>UI/UX Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel nesciunt fugit at sit nisi sequi nobis? Quasi labore itaque quos quod, reprehenderit non ipsum ab eum ratione cumque quae?</p>
+              <a href="" class="read">Learn More</a>
+            </div>
           </div>
-
         </div>
 
-        
       </div>
 
     </section>
+
+
 
     <script src="./assets/js/script.js"></script>
   </body>

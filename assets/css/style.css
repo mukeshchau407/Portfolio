@@ -122,8 +122,8 @@ body {
 
 .navbar a:hover {
   color: #0ef;
-  text-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px #0ef, 0 0 100px #0ef,
-    0 0 200px #0ef;
+  text-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
 }
 
 .home {
@@ -337,13 +337,17 @@ body {
   margin-bottom: 15px;
 }
 
-/* .service-list .service-card a{
+.service-card h2{
+  padding-bottom: 18px;
+}
+
+.service-list .service-card a{
   text-decoration: none;
   color: #000000;
   font-size: 12px;
   margin-top: 20px;
   display: inline-block ;
-} */
+}
 
 .read{
     display: inline-block;
@@ -354,5 +358,16 @@ body {
     background: #0ef;
     border-radius: 42px;
     font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1.5s ease forwards;
+    animation-delay: 1s;
+    box-shadow: 0 0 5px #0ef, 0 0 15px #0ef, 0 0 40px #0ef;
+}
 
+.read:hover{
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;}
+
+.service-list .service-card:hover{
+  transform: translateY(-16px);
 }

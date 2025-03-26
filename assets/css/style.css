@@ -394,7 +394,7 @@ Skills
 .container1 {
   width: 500px;
   height: 500px;
-  padding: 75px 90px;
+  padding: 62px 90px;
   margin-left: 120px;
 }
 
@@ -403,11 +403,12 @@ Skills
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
 }
 
 .bar {
   font-size: 23px;
+  margin-top: 5px;
 }
 
 .technical-bars .bar {
@@ -461,5 +462,188 @@ Skills
 }
 
 .progress-line.html span {
-  width: 90%;
+  width: 95%;
+}
+
+.progress-line.css span {
+  width: 75%;
+}
+
+.progress-line.javascript span {
+  width: 80%;
+}
+
+.progress-line.python span {
+  width: 30%;
+}
+
+.progress-line.react span {
+  width: 85%;
+}
+
+.progress-line span::after {
+  position: absolute;
+  padding: 1px 8px;
+  background-color: #000;
+  color: wheat;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.progress-line.html span::after {
+  content: "95%";
+}
+
+.progress-line.css span::after {
+  content: "75%";
+}
+
+.progress-line.javascript span::after {
+  content: "80%";
+}
+
+.progress-line.python span::after {
+  content: "30%";
+}
+
+.progress-line.react span::after {
+  content: "85%";
+}
+
+.progress-line span::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  top: -25px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes showText{
+  100%{
+    opacity: 1;
+  }
+}
+
+.radial-bars{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.radial-bars .radial-bar{
+  width: 50%;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.radial-bars .radial-bar svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+
+.radial-bars .radial-bar .progress-bar{
+  stroke-width: 10;
+  stop-color: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar{
+  100%{
+    stroke-dashoffset: -1;
+  }
+}
+
+.path{
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path1{
+   animation: animate-path1 1s 1s linear forwards;
+}
+
+.path2{
+   animation: animate-path2 1s 1s linear forwards;
+}
+
+.path3{
+   animation: animate-path3 1s 1s linear forwards;
+}
+
+.path4{
+   animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1{
+  100%{
+    stroke-dashoffset: 90;
+  }
+}
+
+@keyframes animate-path2{
+  100%{
+    stroke-dashoffset: 130;
+  }
+}
+
+@keyframes animate-path3{
+  100%{
+    stroke-dashoffset: 175;
+  }
+}
+
+@keyframes animate-path4{
+  100%{
+    stroke-dashoffset: 180;
+  }
+}
+
+.radial-bar .percentage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s linear forwards;
+  opacity: 0;
+}
+
+.radial-bar .text{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: -5px;
+  transform: translate(-50px);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
 }

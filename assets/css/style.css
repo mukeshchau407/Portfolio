@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #0e0101;
+  background: #000000;
   color: #fff;
 }
 
@@ -16,7 +16,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: rgb(34, 42, 138); */
   padding: 20px 10% 20px 10%;
   background: transparent;
   display: flex;
@@ -646,4 +645,9 @@ Skills
   font-weight: 500;
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
+}
+
+.project{
+  height: 100vh;
+  padding-top: 100px;
 }
